@@ -1,0 +1,62 @@
+.body img {
+    background: url(assets/IMG/banner.jpg);
+    height: 80%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.body .heading {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+}
+
+.body .heading h1 {
+    font-size: 4rem;
+}
+
+.body .heading h1 span {
+    color: #e22c3e;
+    font-weight: bold;
+}
+
+.body .heading h1,
+p {
+    color: snow;
+}
+
+.heading {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        width: 90%;
+    }
+
+    .body .heading h1 {
+        font-size: 3rem;
+    }
+
+    .body .heading {
+        position: absolute;
+        top: 15%;
+        left: 7%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        width: 90%;
+    }
+
+    .body .heading h1 {
+        font-size: 2rem;
+    }
+
+    .body .heading {
+        position: absolute;
+        top: 15%;
+        left: 7%;
+    }
+}
