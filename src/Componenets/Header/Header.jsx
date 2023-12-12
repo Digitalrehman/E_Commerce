@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -11,19 +12,27 @@ const Header = () => {
     <>
       <Navbar expand="lg" className="bg-danger justify-content-center">
         <Container fluid>
-          <Navbar.Brand href="/" className="fs-1 text-light fw-bold">
+          <Navbar.Brand as={Link} to="/" className="fs-1 text-light fw-bold">
             E-Commerce
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto my-2 my-lg-0 fw-bold">
-              <Nav.Link className="active" href="/">
+              <Nav.Link as={Link} to="/" className="active">
                 Home
               </Nav.Link>
-              <Nav.Link href="/Item">Item</Nav.Link>
-              <Nav.Link href="/About">About</Nav.Link>
-              <Nav.Link href="/Login">Account</Nav.Link>
-              <Nav.Link href="/Account">Login</Nav.Link>
+              <Nav.Link as={Link} to="/Item">
+                Item
+              </Nav.Link>
+              <Nav.Link as={Link} to="/About">
+                About
+              </Nav.Link>
+              <Nav.Link as={Link} to="/Login">
+                Account
+              </Nav.Link>
+              <Nav.Link as={Link} to="/Account">
+                Login
+              </Nav.Link>
             </Nav>
             <Form className="d-flex">
               <Form.Control
@@ -38,8 +47,7 @@ const Header = () => {
             </Form>
             <div className="col-1">
               <h4 className="text-light fs-2">
-              <FaShoppingCart />
-
+                <FaShoppingCart />
               </h4>
             </div>
           </Navbar.Collapse>
