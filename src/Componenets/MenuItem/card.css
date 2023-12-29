@@ -1,0 +1,16 @@
+
+.card{
+    width: 21rem;
+    margin: 10px;
+}
+.card-contrainer{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+@media screen and (max-width : 500px) {
+   .card{
+    width: 100%;
+
+   }}
