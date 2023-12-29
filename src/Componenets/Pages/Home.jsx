@@ -13,7 +13,7 @@ const Home = () => {
         <img src={banner} alt="" />
         <div className="heading">
           <h1>
-            <span>Wecome!</span> to our Store
+            <span>Welcome!</span> to our Store
           </h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
