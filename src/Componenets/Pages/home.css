@@ -59,13 +59,13 @@ p {
     }
 
     .body .heading h1 {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 
     .body .heading {
         position: absolute;
         top: 15%;
-        left: 7%;
+        left: 5%;
     }
 
     .body img {
